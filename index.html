@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ===== SEO: edit [placeholders] below ===== -->
+  <title>Car Detailing in [Your City], TX | Ceramic Coating & Paint Correction | UB Detailing</title>
+  <meta name="description" content="Premium auto detailing in [Your City], Texas. Interior & exterior detailing, paint correction, ceramic coating, and mobile detailing near you. Book online or get a free quote today." />
+  <meta name="keywords" content="car detailing near me, auto detailing Texas, mobile detailing [Your City], ceramic coating [Your City] TX, paint correction, interior detailing" />
+  <link rel="canonical" href="https://www.[yourdomain].com/" />
+  <meta name="theme-color" content="#0A0B0D" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="UB Detailing | Premium Car Detailing in [Your City], TX" />
+  <meta property="og:description" content="Your car deserves the best. Interior & exterior detailing, paint correction, and ceramic coating. Book online today." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=75&auto=format&fit=crop" />
+  <meta property="og:url" content="https://www.[yourdomain].com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0B0D'/%3E%3Cpath d='M14 40c4-10 9-14 18-14s14 4 18 14' stroke='%232F80FF' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='22' cy='42' r='4' fill='%23fff'/%3E%3Ccircle cx='42' cy='42' r='4' fill='%23fff'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=75&auto=format&fit=crop" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Local business structured data (helps "near me" searches). Edit [placeholders]. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoWash",
+    "name": "UB Detailing",
+    "description": "Premium interior and exterior car detailing, paint correction, and ceramic coating in [Your City], Texas.",
+    "url": "https://www.[yourdomain].com/",
+    "telephone": "+1-555-123-4567",
+    "image": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&q=75&auto=format&fit=crop",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "[Street Address]",
+      "addressLocality": "[Your City]",
+      "addressRegion": "TX",
+      "postalCode": "[ZIP]",
+      "addressCountry": "US"
+    },
+    "areaServed": ["[City 1]", "[City 2]", "[City 3]", "[City 4]"],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+    ],
+    "sameAs": [
+      "https://instagram.com/[yourhandle]",
+      "https://facebook.com/[yourpage]",
+      "https://tiktok.com/@[yourhandle]"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Promo banner (controlled by js/config.js → promo) -->
+  <div class="promo" id="promo" hidden>
+    <div class="container promo__inner">
+      <span class="promo__dot" aria-hidden="true"></span>
+      <p class="promo__text" id="promoText"></p>
+      <a class="promo__cta" id="promoCta" href="#booking"></a>
+      <button class="promo__close" id="promoClose" aria-label="Dismiss promotion">&times;</button>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M7 26c3-7 7-10 13-10s10 3 13 10" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="13" cy="27" r="2.6"/><circle cx="27" cy="27" r="2.6"/></svg>
+        </span>
+        <span class="logo__text" data-cfg="business.name">UB Detailing</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <div class="nav__mobile-cta">
+          <a class="btn btn--primary btn--block" href="#booking">Book Now</a>
+          <a class="btn btn--ghost btn--block" data-tel href="tel:+15551234567">Call <span data-cfg="business.phone">(555) 123-4567</span></a>
+        </div>
+      </nav>
+
+      <div class="header__actions">
+        <a class="header__phone" data-tel href="tel:+15551234567">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          <span data-cfg="business.phone">(555) 123-4567</span>
+        </a>
+        <a class="btn btn--primary btn--sm" href="#booking">Book Now</a>
+        <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="top">
+      <div class="hero__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=75&auto=format&fit=crop" alt="" fetchpriority="high" />
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <p class="eyebrow reveal"><span class="eyebrow__line"></span><span>Premium Auto Detailing in <span data-cfg="business.city">[Your City]</span>, Texas</span></p>
+        <h1 class="hero__title reveal">Your Car Deserves <span class="text-glow">the Best.</span></h1>
+        <p class="hero__lead reveal">Meticulous interior and exterior detailing, paint correction, and ceramic coating that restores, protects, and keeps your vehicle looking better than the day you bought it.</p>
+        <div class="hero__ctas reveal">
+          <a class="btn btn--primary btn--lg" href="#booking">Book Now
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn--ghost btn--lg" href="#quote">Get a Free Quote</a>
+        </div>
+        <ul class="hero__trust reveal">
+          <li><span class="stars" aria-hidden="true">★★★★★</span> <strong data-cfg="reviewSummary.rating">5.0</strong> on Google</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/></svg> Fully insured</li>
+          <li class="js-mobile-only"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg> Mobile service available</li>
+        </ul>
+      </div>
+      <a class="hero__scroll" href="#services" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- ===== Stats strip ===== -->
+    <section class="stats" aria-label="Highlights">
+      <div class="container stats__grid">
+        <div class="stat reveal"><span class="stat__num" data-count="1000" data-suffix="+">0</span><span class="stat__label">Vehicles detailed <em>[edit]</em></span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="5" data-suffix=".0★">0</span><span class="stat__label">Average Google rating</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="100" data-suffix="%">0</span><span class="stat__label">Satisfaction guarantee</span></div>
+        <div class="stat reveal"><span class="stat__num" data-count="7" data-suffix=" days">0</span><span class="stat__label">Easy online scheduling <em>[edit]</em></span></div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Our Services</p>
+          <h2 class="section__title">Detailing services for every vehicle</h2>
+          <p class="section__lead">From a quick refresh to full paint restoration, every service is done by hand with professional-grade products and the patience your car deserves.</p>
+        </header>
+        <div class="services" id="servicesGrid"><!-- rendered from config.js --></div>
+        <p class="services__note reveal">Don't see what you need? <a href="#quote">Ask for a custom quote</a> and we'll tailor a service to your vehicle.</p>
+      </div>
+    </section>
+
+    <!-- ===== Packages ===== -->
+    <section class="section section--dark" id="packages">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow eyebrow--center"><span class="eyebrow__line"></span>Detailing Packages<span class="eyebrow__line"></span></p>
+          <h2 class="section__title">Simple, transparent pricing</h2>
+          <p class="section__lead">No hidden fees. Pick the package that fits, and we'll confirm your exact price before we start.</p>
+          <div class="toggle" role="tablist" aria-label="Vehicle size">
+            <button role="tab" aria-selected="true" data-size="sedan" class="toggle__btn is-active">Sedan / Coupe</button>
+            <button role="tab" aria-selected="false" data-size="suv" class="toggle__btn">SUV / Truck</button>
+            <span class="toggle__pill" aria-hidden="true"></span>
+          </div>
+        </header>
+
+        <div class="packages" id="packagesGrid"><!-- rendered from config.js --></div>
+
+        <details class="compare reveal">
+          <summary>Compare all package features
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+          <div class="compare__wrap">
+            <table class="compare__table" id="compareTable"><!-- rendered from config.js --></table>
+          </div>
+        </details>
+        <p class="packages__fine">Prices are starting points. Final price depends on vehicle size and condition. Heavily soiled interiors, pet hair, and add-ons may be extra.</p>
+      </div>
+    </section>
+
+    <!-- ===== Before & After ===== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Before &amp; After</p>
+          <h2 class="section__title">The difference is in the details</h2>
+          <p class="section__lead">Drag the slider to see the transformation. Real results from real customer vehicles.</p>
+        </header>
+        <div class="gallery" id="galleryGrid"><!-- rendered from config.js --></div>
+        <div class="gallery__follow reveal">
+          <p>See daily transformations on social</p>
+          <div class="socials" data-socials></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Why Choose Us ===== -->
+    <section class="section section--charcoal" id="why">
+      <div class="container why">
+        <div class="why__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Why Choose Us</p>
+          <h2 class="section__title">Not a car wash. A craft.</h2>
+          <p class="section__lead">We treat every vehicle like it's going to a concours show, whether it's a daily commuter, the family SUV, or a weekend supercar.</p>
+          <a class="btn btn--primary" href="#booking">Book Your Detail</a>
+        </div>
+        <div class="why__grid">
+          <article class="why__item reveal">
+            <span class="why__icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+            <h3>Obsessive attention to detail</h3>
+            <p>Door jambs, vents, seat rails, wheel barrels. We clean the places other shops skip.</p>
+          </article>
+          <article class="why__item reveal">
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v5L5 19a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 19L14 8V3"/><path d="M7.5 14h9"/></svg></span>
+            <h3>Professional-grade products</h3>
+            <p>pH-balanced soaps, premium polishes, and proven coatings that are safe on every finish.</p>
+          </article>
+          <article class="why__item reveal">
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h3>Trained &amp; insured</h3>
+            <p>Experienced, background-checked detailers. Fully insured for your peace of mind.</p>
+          </article>
+          <article class="why__item reveal">
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M3 7h18v10H3z"/><circle cx="12" cy="12" r="2.5"/><path d="M6 10v4M18 10v4"/></svg></span>
+            <h3>Transparent pricing</h3>
+            <p>Clear packages and an exact quote before we start. No surprise upsells.</p>
+          </article>
+          <article class="why__item reveal">
+            <span class="why__icon"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></span>
+            <h3>Satisfaction guaranteed</h3>
+            <p>Not happy with something? Tell us within 48 hours and we'll make it right.</p>
+          </article>
+          <article class="why__item reveal">
+            <span class="why__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3"/></svg></span>
+            <h3>Convenient scheduling</h3>
+            <p>Book online in minutes. We come to your home or office, or drop off at our location.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1100&q=70&auto=format&fit=crop" alt="Detailer hand-washing a black sports car with foam" loading="lazy" width="1100" height="1300" />
+          <div class="about__badge">
+            <strong>Since <span data-cfg="business.yearFounded">[2020]</span></strong>
+            <span>Proudly serving <span data-cfg="business.city">[Your City]</span>, TX</span>
+          </div>
+        </div>
+        <div class="about__copy reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>About Us</p>
+          <h2 class="section__title">Built on a passion for cars</h2>
+          <p><span data-cfg="business.name">UB Detailing</span> started with a simple belief: every car, from a first car to a collector's dream, deserves to be cared for properly. <em>[Edit: share your story. How you started, what drives you, and who's behind the business.]</em></p>
+          <p>We're a locally owned Texas business. We take the time to do things the right way: hand washing instead of brushes, careful paint inspection under proper lighting, and real communication from booking to final walk-around.</p>
+          <ul class="about__list">
+            <li>Locally owned &amp; operated in Texas</li>
+            <li>Every job finished with a walk-around inspection</li>
+            <li>Built to handle Texas heat, dust, and pollen</li>
+            <li>Families, daily drivers, luxury &amp; exotic vehicles welcome</li>
+          </ul>
+          <div class="about__ctas">
+            <a class="btn btn--primary" href="#booking">Book Now</a>
+            <a class="btn btn--text" href="#contact">Get in touch →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reviews ===== -->
+    <section class="section section--dark" id="reviews">
+      <div class="container">
+        <header class="section__head section__head--split reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>Customer Reviews</p>
+            <h2 class="section__title">Trusted by drivers across Texas</h2>
+          </div>
+          <a class="g-summary" data-link="googleBusiness" href="#" target="_blank" rel="noopener">
+            <span class="g-summary__logo" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2A11.9 11.9 0 0 1 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3a12 12 0 0 1-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></svg>
+            </span>
+            <span class="g-summary__body">
+              <strong><span data-cfg="reviewSummary.rating">5.0</span> <span class="stars">★★★★★</span></strong>
+              <span>Based on <span data-cfg="reviewSummary.count">[XX]</span> Google reviews</span>
+            </span>
+          </a>
+        </header>
+        <div class="reviews" id="reviewsGrid"><!-- rendered from config.js --></div>
+        <div class="reviews__ctas reveal">
+          <a class="btn btn--ghost" data-link="googleBusiness" href="#" target="_blank" rel="noopener">Read all reviews on Google</a>
+          <a class="btn btn--text" data-link="googleReview" href="#" target="_blank" rel="noopener">Leave us a review →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Booking ===== -->
+    <section class="section booking-section" id="booking">
+      <div class="booking-section__bg" aria-hidden="true"></div>
+      <div class="container booking">
+        <div class="booking__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Online Booking</p>
+          <h2 class="section__title">Book your detail in under 2 minutes</h2>
+          <p class="section__lead">Choose a service, tell us about your vehicle, and pick a time that works. We'll confirm your appointment by text or call, usually within a few business hours.</p>
+          <ol class="booking__steps-list">
+            <li><span>1</span>Choose your service</li>
+            <li><span>2</span>Tell us about your vehicle</li>
+            <li><span>3</span>Pick a date &amp; time</li>
+          </ol>
+          <p class="booking__alt">Prefer to talk? <a data-tel href="tel:+15551234567">Call <span data-cfg="business.phone">(555) 123-4567</span></a> or <a data-whatsapp href="#" target="_blank" rel="noopener">message us on WhatsApp</a>.</p>
+        </div>
+
+        <form class="card booking__form reveal" id="bookingForm" novalidate>
+          <div class="progress" aria-hidden="true"><span class="progress__bar" id="progressBar"></span></div>
+          <p class="booking__stepcount" id="stepCount">Step 1 of 3</p>
+
+          <!-- Step 1 -->
+          <fieldset class="step is-active" data-step="1">
+            <legend>What can we do for you?</legend>
+            <div class="choice-grid" id="serviceChoices"><!-- rendered --></div>
+            <label class="field">
+              <span>Add-ons (optional)</span>
+              <div class="chips" id="addonChoices"><!-- rendered --></div>
+            </label>
+          </fieldset>
+
+          <!-- Step 2 -->
+          <fieldset class="step" data-step="2">
+            <legend>Your vehicle</legend>
+            <div class="field-row">
+              <label class="field"><span>Year</span><input name="year" inputmode="numeric" maxlength="4" placeholder="2022" /></label>
+              <label class="field"><span>Make *</span><input name="make" required placeholder="Toyota" /></label>
+              <label class="field"><span>Model *</span><input name="model" required placeholder="Camry" /></label>
+            </div>
+            <div class="field">
+              <span>Vehicle type *</span>
+              <div class="seg" role="radiogroup">
+                <label><input type="radio" name="vehicleType" value="Sedan / Coupe" required checked /><span>Sedan / Coupe</span></label>
+                <label><input type="radio" name="vehicleType" value="SUV / Crossover" /><span>SUV</span></label>
+                <label><input type="radio" name="vehicleType" value="Truck" /><span>Truck</span></label>
+                <label><input type="radio" name="vehicleType" value="Van / 3-row" /><span>Van / 3-row</span></label>
+              </div>
+            </div>
+            <label class="field"><span>Current condition</span>
+              <select name="condition">
+                <option>Lightly dirty</option>
+                <option selected>Average daily driver</option>
+                <option>Very dirty / pet hair / stains</option>
+                <option>Swirls or scratches in paint</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <!-- Step 3 -->
+          <fieldset class="step" data-step="3">
+            <legend>When &amp; where</legend>
+            <div class="field-row">
+              <label class="field"><span>Preferred date *</span><input type="date" name="date" required /></label>
+              <label class="field"><span>Preferred time *</span><select name="time" id="timeSelect" required></select></label>
+            </div>
+            <div class="field js-mobile-only">
+              <span>Location *</span>
+              <div class="seg" role="radiogroup">
+                <label><input type="radio" name="location" value="Mobile (come to me)" checked /><span>Come to me</span></label>
+                <label><input type="radio" name="location" value="Drop off at your location" /><span>I'll drop off</span></label>
+              </div>
+            </div>
+            <label class="field js-mobile-only" id="addressField"><span>Service address</span><input name="address" autocomplete="street-address" placeholder="Street, city, ZIP" /></label>
+            <div class="field-row field-row--2">
+              <label class="field"><span>Full name *</span><input name="name" required autocomplete="name" /></label>
+              <label class="field"><span>Phone *</span><input type="tel" name="phone" required autocomplete="tel" placeholder="(555) 555-5555" /></label>
+            </div>
+            <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" /></label>
+            <label class="field"><span>Anything else we should know?</span><textarea name="notes" rows="3" placeholder="Gate code, specific stains, questions…"></textarea></label>
+          </fieldset>
+
+          <!-- Success -->
+          <div class="step step--done" data-step="done" hidden>
+            <div class="done__icon"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg></div>
+            <h3 id="doneTitle">Request received!</h3>
+            <p id="doneMsg">Thanks! We'll reach out shortly to confirm your appointment.</p>
+            <a class="btn btn--primary" id="doneWhatsapp" href="#" target="_blank" rel="noopener" hidden>Send via WhatsApp to confirm faster</a>
+          </div>
+
+          <div class="summary" id="bookingSummary" aria-live="polite"></div>
+
+          <div class="booking__nav" id="bookingNav">
+            <button type="button" class="btn btn--ghost" id="prevBtn" hidden>Back</button>
+            <p class="form__error" id="formError" role="alert"></p>
+            <button type="button" class="btn btn--primary" id="nextBtn">Continue</button>
+            <button type="submit" class="btn btn--primary" id="submitBtn" hidden>Request Booking</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section--charcoal" id="faq">
+      <div class="container faq">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>FAQ</p>
+          <h2 class="section__title">Questions, answered</h2>
+          <p class="section__lead">Still unsure? <a href="#contact">Reach out</a> and we'll help you pick the right service.</p>
+        </header>
+        <div class="faq__list" id="faqList"><!-- rendered from config.js --></div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Contact Us</p>
+          <h2 class="section__title" id="quote">Get a free quote</h2>
+          <p class="section__lead">Send a message, call, or text. We typically reply within a couple of hours during business hours.</p>
+        </header>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <div class="contact__quick">
+              <a class="quick" data-tel href="tel:+15551234567">
+                <span class="quick__icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span>
+                <span><small>Call us</small><strong data-cfg="business.phone">(555) 123-4567</strong></span>
+              </a>
+              <a class="quick quick--wa" data-whatsapp href="#" target="_blank" rel="noopener">
+                <span class="quick__icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></span>
+                <span><small>WhatsApp</small><strong>Chat with us</strong></span>
+              </a>
+            </div>
+
+            <div class="info-block">
+              <h3>Business hours <span class="open-badge" id="openBadge"></span></h3>
+              <ul class="hours" id="hoursList"><!-- rendered --></ul>
+            </div>
+
+            <div class="info-block">
+              <h3>Service areas</h3>
+              <p class="muted">Mobile detailing across <span data-cfg="business.city">[Your City]</span> and surrounding Texas communities:</p>
+              <ul class="areas" id="areasList"><!-- rendered --></ul>
+            </div>
+
+            <div class="info-block">
+              <h3>Find us</h3>
+              <p class="muted"><span data-cfg="business.address">[Street Address], [Your City], TX [ZIP]</span><br /><a data-email href="#"><span data-cfg="business.email">[hello@yourbusiness.com]</span></a></p>
+              <div class="socials" data-socials></div>
+            </div>
+          </div>
+
+          <div class="contact__right">
+            <form class="card contact__form reveal" id="contactForm" novalidate>
+              <h3>Request a free quote</h3>
+              <div class="field-row field-row--2">
+                <label class="field"><span>Name *</span><input name="name" required autocomplete="name" /></label>
+                <label class="field"><span>Phone *</span><input type="tel" name="phone" required autocomplete="tel" /></label>
+              </div>
+              <div class="field-row field-row--2">
+                <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" /></label>
+                <label class="field"><span>Vehicle</span><input name="vehicle" placeholder="2021 Ford F-150" /></label>
+              </div>
+              <label class="field"><span>Service interested in</span><select name="service" id="contactService"></select></label>
+              <label class="field"><span>Message *</span><textarea name="message" rows="4" required placeholder="Tell us about your vehicle and what you'd like done."></textarea></label>
+              <p class="form__error" role="alert"></p>
+              <button class="btn btn--primary btn--block" type="submit">Send My Quote Request</button>
+              <p class="form__ok" hidden>Thanks! Your message is on its way. We'll be in touch shortly.</p>
+            </form>
+            <div class="map reveal">
+              <iframe id="mapFrame" title="Map of our location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Final CTA ===== -->
+    <section class="cta-band">
+      <div class="cta-band__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?w=1920&q=70&auto=format&fit=crop" alt="" loading="lazy" />
+      </div>
+      <div class="container cta-band__inner reveal">
+        <h2>Ready for that new-car feeling again?</h2>
+        <p>Spots fill quickly, especially on weekends. Reserve yours today.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary btn--lg" href="#booking">Book Now</a>
+          <a class="btn btn--ghost btn--lg" data-tel href="tel:+15551234567">Call <span data-cfg="business.phone">(555) 123-4567</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#top" class="logo">
+          <span class="logo__mark" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M7 26c3-7 7-10 13-10s10 3 13 10" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="13" cy="27" r="2.6"/><circle cx="27" cy="27" r="2.6"/></svg></span>
+          <span class="logo__text" data-cfg="business.name">UB Detailing</span>
+        </a>
+        <p>Premium car detailing, paint correction, and ceramic coating in <span data-cfg="business.city">[Your City]</span>, Texas.</p>
+        <div class="socials" data-socials></div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul id="footerServices"></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#packages">Packages &amp; pricing</a></li>
+          <li><a href="#gallery">Before &amp; after</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a data-tel href="tel:+15551234567" data-cfg="business.phone">(555) 123-4567</a></li>
+          <li><a data-email href="#" data-cfg="business.email">[hello@yourbusiness.com]</a></li>
+          <li data-cfg="business.address">[Street Address], [Your City], TX [ZIP]</li>
+          <li><a class="btn btn--primary btn--sm" href="#booking">Book Now</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> <span data-cfg="business.name">UB Detailing</span>. All rights reserved.</p>
+      <p>Car detailing near me · Auto detailing in <span data-cfg="business.city">[Your City]</span>, TX · Ceramic coating · Paint correction</p>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky action bar -->
+  <nav class="mobile-bar" aria-label="Quick actions">
+    <a data-tel href="tel:+15551234567"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call</a>
+    <a class="mobile-bar__book" href="#booking">Book Now</a>
+    <a data-whatsapp href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>WhatsApp</a>
+  </nav>
+
+  <!-- Floating WhatsApp (desktop) -->
+  <a class="wa-float" data-whatsapp href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.4.7-2 1-2.3.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
