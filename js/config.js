@@ -181,12 +181,12 @@ window.SITE = {
      sample:false on each once it's a real review. Sample reviews show a
      "Sample" label so visitors aren't misled. */
   reviews: [
-    { name: “[Customer Name]”, rating: 5, when: “[Month Year]”, sample: true,
-      text: “Paste a real Google review here.” },
-    { name: “[Customer Name]”, rating: 5, when: “[Month Year]”, sample: true,
-      text: “Paste a real Google review here.” },
-    { name: “[Customer Name]”, rating: 5, when: “[Month Year]”, sample: true,
-      text: “Paste a real Google review here.” },
+    { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
+      text: "Paste a real Google review here." },
+    { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
+      text: "Paste a real Google review here." },
+    { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
+      text: "Paste a real Google review here." },
   ],
   reviewSummary: { rating: "5.0", count: "[XX]" },   // your Google rating & review count
 
