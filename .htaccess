@@ -1,0 +1,19 @@
+# config.js changes on every content update — never cache it
+<Files "config.js">
+    Header set Cache-Control "no-cache, must-revalidate"
+</Files>
+
+# Never cache HTML so deploys show immediately
+<FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+</FilesMatch>
+
+# Other JS and CSS: cache for 7 days
+<FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=604800"
+</FilesMatch>
+
+# Images: cache for 30 days
+<FilesMatch "\.(jpg|jpeg|png|gif|svg|webp|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+</FilesMatch>
