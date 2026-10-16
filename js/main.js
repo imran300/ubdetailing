@@ -377,7 +377,7 @@
       en.target.classList.add("is-in");
       revealObs.unobserve(en.target);
     });
-  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  }, { threshold: 0, rootMargin: "0px 0px 120px 0px" });
   $$(".reveal").forEach((el) => revealObs.observe(el));
 
   const countObs = new IntersectionObserver((entries) => {
