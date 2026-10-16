@@ -193,8 +193,8 @@
       <span class="choice__box"><strong>${esc(c.name)}${c.pop ? '<span class="pop">Popular</span>' : ""}</strong><small>${esc(c.sub)}</small></span></label>`;
   }).join("");
 
-  const ADDONS = ["Engine Bay Cleaning", "Headlight Restoration", "Pet Hair Removal", "Odor Elimination", "Clay Bar Treatment"]
-    .filter((a) => !/Engine|Headlight/.test(a) || services.some((s) => s.name === a));
+  const ADDONS = ["Engine Bay Cleaning", "Pet Hair Removal", "Odor Elimination", "Clay Bar Treatment"]
+    .filter((a) => !/Engine/.test(a) || services.some((s) => s.name === a));
   $("#addonChoices").innerHTML = ADDONS.map((a) => `<label class="chip"><input type="checkbox" name="addons" value="${esc(a)}" /><span>+ ${esc(a)}</span></label>`).join("");
 
   $("#timeSelect").innerHTML = '<option value="">Select a time</option>' + S.timeSlots.map((t) => `<option>${esc(t)}</option>`).join("");

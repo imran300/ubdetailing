@@ -127,7 +127,6 @@ window.SITE = {
       "Leather clean & condition",
       "Carpet & seat shampoo",
       "Clay bar decontamination",
-      "One-step paint polish",
       "Engine bay cleaning",
     ],
     tiers: [
@@ -136,21 +135,21 @@ window.SITE = {
         blurb: "A thorough maintenance detail to keep a well-kept car looking sharp.",
         prices: { sedan: "$[XXX]", suv: "$[XXX]" },
         duration: "~2 hrs",
-        includes: [true, true, true, true, true, false, false, false, false, false],
+        includes: [true, true, true, true, true, false, false, false, false],
       },
       {
         id: "premium", name: "Premium", popular: true,
         blurb: "Our best seller. A deep clean inside and out with added paint protection.",
         prices: { sedan: "$[XXX]", suv: "$[XXX]" },
         duration: "~4 hrs",
-        includes: [true, true, true, true, true, true, true, true, false, false],
+        includes: [true, true, true, true, true, true, true, true, false],
       },
       {
         id: "ultimate", name: "Ultimate", popular: false,
-        blurb: "Showroom restoration with paint enhancement and ceramic protection.",
+        blurb: "Showroom restoration with a complete inside-and-out transformation.",
         prices: { sedan: "$[XXX]", suv: "$[XXX]" },
         duration: "~1 day",
-        includes: [true, true, true, true, "Upgraded", true, true, true, true, true],
+        includes: [true, true, true, true, "Upgraded", true, true, true, true],
       },
     ],
   },
@@ -160,7 +159,7 @@ window.SITE = {
      use paths like "images/civic-before.jpg". Set sample:false once real. */
   gallery: [
     {
-      title: "Paint correction, BMW 7 Series", sample: true,
+      title: "Full detail, BMW 7 Series", sample: true,
       before: "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1200&q=70&auto=format&fit=crop",
       after:  "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?w=1200&q=70&auto=format&fit=crop",
     },
@@ -170,7 +169,7 @@ window.SITE = {
       after:  "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=70&auto=format&fit=crop",
     },
     {
-      title: "Ceramic coating, Mercedes-AMG", sample: true,
+      title: "Interior deep clean, Mercedes-AMG", sample: true,
       before: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1200&q=70&auto=format&fit=crop",
       after:  "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=1200&q=70&auto=format&fit=crop",
     },
@@ -184,8 +183,8 @@ window.SITE = {
   reviews: [
     { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
       text: "[Paste a real Google review here. Example: “My SUV hadn't looked this good since the day I bought it. On time, professional, and the interior smells brand new.”]" },
-    { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
-      text: "[Paste a real Google review here. Example: “Booked the ceramic coating and the paint is unreal. Water just slides off. Worth every penny.”]" },
+    { name: “[Customer Name]”, rating: 5, when: “[Month Year]”, sample: true,
+      text: “[Paste a real Google review here. Example: “Booked the Premium package and my car looks incredible. Fast, professional, and worth every penny.”]” },
     { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
       text: "[Paste a real Google review here. Example: “With two kids and a dog, I didn't think the seats could be saved. They were.”]" },
   ],
@@ -194,8 +193,7 @@ window.SITE = {
   /* ---------- FAQ (also helps Google search) ---------- */
   faq: [
     { q: "Do you come to me?", a: "Yes. We offer mobile detailing at your home or office across our service area, as well as appointments at our location. [Edit to match how you operate.]" },
-    { q: "How long does a detail take?", a: "A Basic detail takes about 2 hours, Premium about 4 hours, and paint correction or ceramic coating can take one to two days." },
-    { q: "How long does a ceramic coating last?", a: "Depending on the product and how the car is maintained, our coatings last from 1 to 5 years. [Edit to match the coatings you use.]" },
+    { q: "How long does a detail take?", a: "A Basic detail takes about 2 hours, Premium about 4 hours, and our Ultimate package typically takes a full day." },
     { q: "Do I need to do anything before my appointment?", a: "Just remove personal items from the cabin and trunk. If we're coming to you, we may need access to water and power. [Edit as needed.]" },
     { q: "What forms of payment do you accept?", a: "[Cash, all major cards, Zelle, Apple Pay — edit to match.]" },
   ],
