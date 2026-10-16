@@ -183,8 +183,8 @@ window.SITE = {
   reviews: [
     { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
       text: "[Paste a real Google review here. Example: “My SUV hadn't looked this good since the day I bought it. On time, professional, and the interior smells brand new.”]" },
-    { name: “[Customer Name]”, rating: 5, when: “[Month Year]”, sample: true,
-      text: “[Paste a real Google review here. Example: “Booked the Premium package and my car looks incredible. Fast, professional, and worth every penny.”]” },
+    { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
+      text: "[Paste a real Google review here. Example: “Booked the Premium package and my car looks incredible. Fast, professional, and worth every penny.”]" },
     { name: "[Customer Name]", rating: 5, when: "[Month Year]", sample: true,
       text: "[Paste a real Google review here. Example: “With two kids and a dog, I didn't think the seats could be saved. They were.”]" },
   ],
