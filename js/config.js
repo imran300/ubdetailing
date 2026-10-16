@@ -9,24 +9,24 @@ window.SITE = {
   business: {
     name: "UB Detailing",                 // [BUSINESS NAME]
     tagline: "Premium Auto Detailing",
-    city: "[Your City]",                  // e.g. "Houston"
+    city: "Dallas",                       // e.g. "Houston"
     state: "TX",
-    address: "[Street Address], [Your City], TX [ZIP]",
+    address: "Dallas, TX",
     phone: "(555) 123-4567",              // shown on the site
     phoneRaw: "+15551234567",             // used for click-to-call (digits only, with +1)
-    whatsapp: "15551234567",              // WhatsApp number, digits only incl. country code
-    email: "[hello@yourbusiness.com]",
-    yearFounded: "[2020]",
+    whatsapp: "15551234567",             // WhatsApp number, digits only incl. country code
+    email: "hello@ubdetailing.com",
+    yearFounded: "2024",
     mobileService: true,                  // true = you also come to the customer
     // Google Maps search text used for the embedded map:
-    mapQuery: "Houston, TX",
+    mapQuery: "Dallas, TX",
   },
 
   /* ---------- Social & review links ---------- */
   links: {
     googleBusiness: "https://g.page/r/[YOUR-GOOGLE-PROFILE-ID]",
     googleReview: "https://g.page/r/[YOUR-GOOGLE-PROFILE-ID]/review",
-    instagram: "https://instagram.com/[yourhandle]",
+    instagram: "https://instagram.com/ubdetailing-70",
     facebook: "https://facebook.com/[yourpage]",
     tiktok: "https://tiktok.com/@[yourhandle]",
   },
@@ -60,8 +60,8 @@ window.SITE = {
 
   /* ---------- Cities you serve (great for local SEO) ---------- */
   serviceAreas: [
-    "[City 1]", "[City 2]", "[City 3]", "[City 4]",
-    "[City 5]", "[City 6]", "[City 7]", "[City 8]",
+    "Dallas", "Plano", "Frisco", "McKinney",
+    "Allen", "Garland", "Irving", "Arlington",
   ],
 
   /* ---------- Appointment time slots offered in the booking form ---------- */
