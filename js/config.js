@@ -103,14 +103,6 @@ window.SITE = {
       desc: "Hot-water extraction for carpets and seats, stain and odor treatment, pet hair removal. Ideal for family vehicles.",
       image: "https://images.unsplash.com/photo-1563720223185-11003d516935?w=900&q=70&auto=format&fit=crop",
     },
-    {
-      id: "engine", icon: "engine", available: true,
-      name: "Engine Bay Cleaning",
-      price: "From $[XXX]",
-      duration: "1 hr",
-      desc: "Safe degreasing and dressing of the engine bay. Cleaner looks and easier to spot leaks early.",
-      image: "https://images.unsplash.com/photo-1606577924006-27d39b132ae2?w=900&q=70&auto=format&fit=crop",
-    },
   ],
 
   /* ---------- Packages ----------
@@ -127,7 +119,6 @@ window.SITE = {
       "Leather clean & condition",
       "Carpet & seat shampoo",
       "Clay bar decontamination",
-      "Engine bay cleaning",
     ],
     tiers: [
       {
@@ -135,21 +126,21 @@ window.SITE = {
         blurb: "A thorough maintenance detail to keep a well-kept car looking sharp.",
         prices: { sedan: "$[XXX]", suv: "$[XXX]" },
         duration: "~2 hrs",
-        includes: [true, true, true, true, true, false, false, false, false],
+        includes: [true, true, true, true, true, false, false, false],
       },
       {
         id: "premium", name: "Premium", popular: true,
         blurb: "Our best seller. A deep clean inside and out with added paint protection.",
         prices: { sedan: "$[XXX]", suv: "$[XXX]" },
         duration: "~4 hrs",
-        includes: [true, true, true, true, true, true, true, true, false],
+        includes: [true, true, true, true, true, true, true, true],
       },
       {
         id: "ultimate", name: "Ultimate", popular: false,
         blurb: "Showroom restoration with a complete inside-and-out transformation.",
         prices: { sedan: "$[XXX]", suv: "$[XXX]" },
         duration: "~1 day",
-        includes: [true, true, true, true, "Upgraded", true, true, true, true],
+        includes: [true, true, true, true, "Upgraded", true, true, true],
       },
     ],
   },
